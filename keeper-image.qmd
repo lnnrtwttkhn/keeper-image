@@ -2,6 +2,8 @@
 title: "keeper-image"
 ---
 
+The source repository of this website can be found [on GitHub](https://github.com/lnnrtwttkhn/keeper-image/).
+
 ## Problem
 
 Quarto HTML document does not display image downloaded from a publicly accessible cloud share provider (here: [Keeper](https://keeper.mpdl.mpg.de/)).
