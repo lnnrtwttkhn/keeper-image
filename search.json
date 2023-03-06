@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Keeper Image",
+    "section": "",
+    "text": "The source repository of this website can be found on GitHub."
+  },
+  {
+    "objectID": "index.html#problem",
+    "href": "index.html#problem",
+    "title": "Keeper Image",
+    "section": "Problem",
+    "text": "Problem\nQuarto HTML document does not display image downloaded from a publicly accessible cloud share provider (here: Keeper)."
+  },
+  {
+    "objectID": "index.html#example",
+    "href": "index.html#example",
+    "title": "Keeper Image",
+    "section": "Example",
+    "text": "Example\nHere is the link to the Keeper logo: https://keeper.mpdl.mpg.de/media/custom/KeeperLogo.svg\nI can embed it in Markdown using the ![]() Markdown syntax:\n![](https://keeper.mpdl.mpg.de/media/custom/KeeperLogo.svg)\n\nHere is the link to the same logo, stored in a Keeper library: https://keeper.mpdl.mpg.de/f/ec510a79d3ab495eaf67/\nAgain, I want to embed it in Markdown using the direct download link:\n![](https://keeper.mpdl.mpg.de/f/ec510a79d3ab495eaf67/?dl=1)\n\nCan you see the logo?\nNo, right?\nBut the same thing works for the README.md on GitHub …\n\n  \n    \n\n    \n  \n    \n     GitHub\n  \n\n  \n  \n… and also for the link provided to the image field in the YAML header when using the About Pages template.\n\n\n\nWhy?"
+  }
+]
