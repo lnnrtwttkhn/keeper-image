@@ -1,5 +1,13 @@
 ---
-title: "keeper-image"
+title: "Keeper Image"
+image: https://keeper.mpdl.mpg.de/f/ec510a79d3ab495eaf67/?dl=1
+about:
+  id: hero-heading
+  template: trestles
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/lnnrtwttkhn/keeper-image/
 ---
 
 The source repository of this website can be found [on GitHub](https://github.com/lnnrtwttkhn/keeper-image/).
@@ -34,6 +42,10 @@ Can you see the logo?
 
 No, right?
 
-But the same thing works for the [README.md](https://github.com/lnnrtwttkhn/keeper-image/blob/main/README.md) on GitHub.
+But the same thing works for the [README.md](https://github.com/lnnrtwttkhn/keeper-image/blob/main/README.md) on GitHub ...
 
-Why?
+:::{#hero-heading}
+... and also for the link provided to the `image` field in the YAML header when using the [About Pages](https://quarto.org/docs/websites/website-about.html) template. 
+:::
+
+**Why?**
