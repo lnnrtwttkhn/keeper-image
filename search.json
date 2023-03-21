@@ -19,5 +19,12 @@
     "title": "Keeper Image",
     "section": "Example",
     "text": "Example\nHere is the link to the Keeper logo: https://keeper.mpdl.mpg.de/media/custom/KeeperLogo.svg\nI can embed it in Markdown using the ![]() Markdown syntax:\n![](https://keeper.mpdl.mpg.de/media/custom/KeeperLogo.svg)\n\nHere is the link to the same logo, stored in a Keeper library: https://keeper.mpdl.mpg.de/f/ec510a79d3ab495eaf67/\nAgain, I want to embed it in Markdown using the direct download link:\n![](https://keeper.mpdl.mpg.de/f/ec510a79d3ab495eaf67/?dl=1)\n\nCan you see the logo?\nNo, right?\nBut the same thing works for the README.md on GitHub …\n\n  \n    \n\n    \n  \n    \n     GitHub\n  \n\n  \n  \n… and also for the link provided to the image field in the YAML header when using the About Pages template.\n\n\n\nWhy?"
+  },
+  {
+    "objectID": "index.html#workaround-pre-render",
+    "href": "index.html#workaround-pre-render",
+    "title": "Keeper Image",
+    "section": "Workaround: Pre-render",
+    "text": "Workaround: Pre-render\nOne workaround is to execute a script that downloads images from the cloud storage as part of the pre-render options in Quarto.\nHere is one approach:\n\nWe create a Makefile command prepare that uses wget to download the image from Keeper:\n\nprepare:\n  wget https://keeper.mpdl.mpg.de/f/ec510a79d3ab495eaf67/?dl=1 -O KeeperLogo.svg\n\nWe include pre-render: make prepare in _quarto.yml\nWe include a path to the downloaded file:\n\n![](KeeperLogo.svg)\nThis is the outcome:\n\nCool! 🎉"
   }
 ]
