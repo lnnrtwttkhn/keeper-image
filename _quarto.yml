@@ -11,3 +11,4 @@ website:
 format:
   html:
     theme: cosmo
+    link-external-newwindow: true
