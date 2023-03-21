@@ -49,3 +49,30 @@ But the same thing works for the [README.md](https://github.com/lnnrtwttkhn/keep
 :::
 
 **Why?**
+
+## Workaround: Pre-render
+
+One workaround is to execute a script that downloads images from the cloud storage as part of the [`pre-render` options in Quarto](https://quarto.org/docs/projects/scripts.html#pre-and-post-render).
+
+Here is one approach:
+
+1. We create a Makefile command `prepare` that uses `wget` to download the image from Keeper:
+
+  ```Makefile
+  prepare:
+  	wget https://keeper.mpdl.mpg.de/f/ec510a79d3ab495eaf67/?dl=1 -O KeeperLogo.svg
+  ```
+
+2. We include `pre-render: make prepare` in `_quarto.yml`
+
+3. We include a path to the downloaded file:
+
+  ```markdown
+  ![](KeeperLogo.svg)
+  ```
+
+This is the outcome:
+
+![](KeeperLogo.svg)
+
+Cool! 🎉

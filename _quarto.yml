@@ -1,5 +1,6 @@
 project:
   type: website
+  pre-render: make prepare
 
 website:
   navbar:
